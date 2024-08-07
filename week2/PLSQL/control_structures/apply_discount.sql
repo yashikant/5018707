@@ -2,7 +2,7 @@ DECLARE
     CURSOR c_customers IS
         SELECT customer_id, loan_interest_rate
         FROM customers
-        WHERE age > 60;
+        WHERE age>60;
         
     v_loan_interest_rate customers.loan_interest_rate%TYPE;
 BEGIN
